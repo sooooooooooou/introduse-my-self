@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdese my self yeee</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #ffffff 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .profile-card {
+            background: #000000;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #ffffff;
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #000000;
+            font-weight: bold;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .profile-image:hover {
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 0.5rem;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #dddddd;
+            margin-bottom: 1rem;
+        }
+
+        .sites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .site-card {
+            background: #111111;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #ffffff;
+        }
+
+        .site-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+        }
+
+        .site-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .site-description {
+            color: #cccccc;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .site-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #000000, #8a8a8a);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .site-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #fffdfd, #ffffff);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .profile-card {
+                padding: 2rem;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .sites-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-image">
+                CLiMe
+            </div>
+            
+            <h1 class="name">clime</h1>
+            <p class="title">はげ</p>
+            
+            <div class="section">
+                <h2>自己紹介</h2>
+                <p class="intro-text">
+                    ウェブ開発
+                </p>
+                <p class="intro-text">
+                    ぴぴぴー
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>制作したサイト</h2>
+                <div class="sites-grid">
+                    <div class="site-card">
+                        <h3 class="site-title">未設定</h3>
+                        <p class="site-description">
+                            未設定
+                        </p>
+                        <a href="#" class="site-link">サイトを見る</a>
+                    </div>
+                    
+                    <div class="site-card">
+                        <h3 class="site-title">未設定</h3>
+                        <p class="site-description">
+                            未設定
+                        </p>
+                        <a href="#" class="site-link">サイトを見る</a>
+                    </div>
+                    
+                    <div class="site-card">
+                        <h3 class="site-title">未設定</h3>
+                        <p class="site-description">
+                            未設定
+                        </p>
+                        <a href="#" class="site-link">サイトを見る</a>
+                    </div>
+                    
+                    <div class="site-card">
+                        <h3 class="site-title">未設定</h3>
+                        <p class="site-description">
+                            未設定
+                        </p>
+                        <a href="#" class="site-link">サイトを見る</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-link" title="GitHub">や</a>
+                <a href="#" class="social-link" title="Twitter">っ</a>
+                <a href="#" class="social-link" title="LinkedIn">ほ</a>
+                <a href="#" class="social-link" title="Email">ー</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
